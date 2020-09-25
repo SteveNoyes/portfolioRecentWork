@@ -1,0 +1,85 @@
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.workCard {
+  flex: 0 40%;
+  text-align: center;
+  border: 2px solid black;
+  width: 60%;
+  margin: 4rem auto;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+  box-shadow: 1px 2px lightgray;
+  background-color: #B4CAD7;
+}
+
+.shortProjectInfo {
+  display: block;
+}
+
+.longPorjectInfo {
+  display: none;
+}
+
+.workCard:hover {
+  transform: scale(1.1);
+  box-shadow: 2px 3px lightgray;
+}
+
+.workCard a {
+  text-decoration: none;
+  color: black;
+}
+
+.topImg {
+  width: 100%;
+  border-radius: 8px 8px 2px 2px;
+}
+
+.btnContainer {
+  display: inline;
+  margin-bottom: 35px;
+}
+
+.btn {
+  display: inline;
+  font-size: 20px;
+  background-color: #1D3557;
+  margin-right: 10px;
+  padding: 5px 5px 0 5px;
+  border-radius: 7px;
+}
+
+.btn a {
+  color: white;
+}
+
+
+
+
+/* media query */
+
+@media screen and (min-width: 850px) {
+
+
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .shortProjectInfo {
+    display: none;
+  }
+
+  .longPorjectInfo {
+    display: block;
+    width: 70%;
+    margin: auto;
+  }
+
+}
